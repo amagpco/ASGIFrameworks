@@ -1,4 +1,7 @@
-# ASGIFrameworks
+# ASGI frameworks
+You can use Uvicorn, Daphne, or Hypercorn to run any ASGI framework.
+
+For small services you can also write ASGI applications directly.
 
 ASGI (Asynchronous Server Gateway Interface) frameworks in Python vary in terms of performance, features, and complexity. While it's challenging to definitively rank them from fastest to slowest since performance can depend on many factors, I can provide a list of some popular ASGI frameworks, along with brief descriptions, starting with some of the most widely recognized for their speed and scalability:
 
@@ -46,5 +49,18 @@ ASGI (Asynchronous Server Gateway Interface) frameworks in Python vary in terms 
 9. **Django with Channels**:
    - Django, a synchronous framework, can be used with Channels to add asynchronous functionality.
    - Suitable for building real-time applications alongside traditional web applications.
+  
+10. **Quart**:
+    - Quart is a Flask-like ASGI web framework.  
+
+11. **BlackSheep**:
+     - BlackSheep is a web framework based on ASGI, inspired by Flask and ASP.NET Core.
+     - Its most distinctive features are built-in support for dependency injection, automatic binding of parameters by request handler's type annotations, and automatic generation of OpenAPI documentation and Swagger UI.
+
+12. **Falcon**:
+     - Falcon is a minimalist REST and app backend framework for Python, with a focus on reliability, correctness, and performance at scale.
+
+12. **Muffin**:
+     - Muffin is a fast, lightweight and asynchronous ASGI web-framework for Python 3.
 
 Please note that the choice of framework should not only depend on performance but also on factors like ease of use, community support, the specific requirements of your project, and your familiarity with the framework. Performance can also vary based on how well your code is optimized, your server configuration, and the workload of your application. Therefore, it's essential to consider your project's unique needs when selecting an ASGI framework.
